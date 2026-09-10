@@ -1,65 +1,50 @@
 # Siva Datta Koneru
 
-**Senior Software Engineer — AI Platforms, Backend Systems & Distributed Data**
+**Senior AI Platform Engineer — LLM Systems, RAG & Backend**
+
 Hyderabad, India · Remote across US and APAC time zones
 
-I build production AI platforms and the distributed systems underneath them. Nine years shipping backend
-and full-stack software at **Bloomberg**, **Upland Software**, and **GoodNotes** — the last four focused on
-retrieval-augmented generation, LLM orchestration, and agentic workflows that hold up under real traffic.
+Senior software engineer with 9+ years of experience building AI platforms, backend services, distributed data systems, and React applications. My professional impact comes from work at Panviva, Bloomberg, and GoodNotes; the pinned repositories provide public, runnable reference implementations of relevant engineering practices.
 
-Most of my work is measured in what it saved rather than what it demoed.
+## Production Impact
 
----
+- **Panviva / Upland Software:** Architected an enterprise RAG platform serving **11,000+ users**. Implemented prompt caching that reduced AI infrastructure cost by **35%** and average response time by **20%**; owned LLM workflows for prompt enhancement, answer generation, title generation, and hallucination checks.
+- **Bloomberg TOMS:** Built Python fixed-income analytics for workflows processing **100M+ market and trade records daily**; contributed to a **60%** reduction in analytics latency through Apache Druid.
+- **Bloomberg Internal Sales:** Contributed to C#/.NET systems and an ASP.NET-to-.NET Core modernization that improved screen-load performance by **70%** and reduced infrastructure costs by **30%**.
+- **GoodNotes:** Built MCP-based workflow tooling connecting Jira-backed work, local Kanban state, Git branches, and reviewed pull-request workflows, reducing task-preparation and triage effort by **40%**.
 
-## What I've shipped
+## Featured Open-Source Projects
 
-**Enterprise RAG platform — Panviva / Upland Software**
-Owned it end to end for **11,000+ users** in compliance-sensitive contact-center workflows: semantic
-chunking, embedding retrieval, cosine ranking, context re-ranking, Azure OpenAI generation, and self-hosted
-vLLM for inference cost control.
+### [enterprise-rag-platform](https://github.com/sivadkoneru/enterprise-rag-platform)
 
-- **−35%** AI infrastructure cost and **−20%** inference latency through semantic caching, token-budget optimization, and request batching
-- **~+60%** answer relevance and agent productivity, measured by resolved-query rate
-- LLM-as-judge evaluation harness with golden datasets and groundedness scoring, gating releases
-- Multi-stage guardrails flagging low-confidence and ungrounded answers before delivery
+.NET platform for document ingestion and grounded, cited question answering. Demonstrates dependency-injected parser, chunking, document-store, vector-store, and LLM-provider boundaries; async ingestion; API and CLI interfaces; S3 and Azure Blob sources; Elasticsearch retrieval; and local Docker services.
 
-**Fixed-income analytics — Bloomberg TOMS**
-Distributed analytics for sell-side trading desks over **100M+ market and trade records daily**.
+Includes a deterministic **50-question retrieval evaluation** that compares four chunking strategies on the same corpus. Evaluation results are committed, regression-tested, and regenerated in CI.
 
-- **−60%** analytics pipeline latency, rebuilding SQL Server aggregations onto Apache Druid
-- Real-time ingestion, validation, and reconciliation; G-spread and Z-spread computed live
-- Decommissioned 30+ legacy services while raising automated test coverage 20%
+### [market-intelligence-platform](https://github.com/sivadkoneru/market-intelligence-platform)
 
-**AI product and agentic automation — GoodNotes**
-Production AI image workflows across web, backend, and iOS; **−80% crashes** across 100+ resolved bugs.
-Built MCP-based multi-agent automation over engineering tools that cut bug investigation and triage effort 30%.
+Multi-service Python reference platform for ingesting market and news events, streaming them through Azure Service Bus, calculating indicators, generating RAG-driven explanations, and serving alerts through FastAPI REST and WebSocket APIs.
 
----
+Demonstrates asynchronous services, Apache Druid, Elasticsearch kNN, PostgreSQL, Redis, Docker Compose, deterministic offline mocks, benchmark tooling, and automated lint, type-check, test, and container-build gates. Educational project only; not for trading or financial advice.
 
-## What I'm building in public
+### [atlassian-hermes-connector](https://github.com/sivadkoneru/atlassian-hermes-connector)
 
-| Project | What it is |
-| --- | --- |
-| [enterprise-rag-platform](https://github.com/sivadkoneru/enterprise-rag-platform) | Pluggable RAG platform in .NET 10 — ingests from local disk, S3, and Azure Blob; chunks and embeds into a document store plus Elasticsearch; answers with grounded, cited responses through configurable LLM endpoints. Minimal API + CLI, provider packages for Cosmos, Mongo, S3, and Blob. |
-| [market-intelligence-platform](https://github.com/sivadkoneru/market-intelligence-platform) | Multi-service Python platform streaming live market data and news through Azure Service Bus, computing technical indicators and RAG-driven insights, persisting time series to Apache Druid, and serving REST + WebSocket APIs. |
-| [atlassian-hermes-connector](https://github.com/sivadkoneru/atlassian-hermes-connector) | Connects Jira through the Atlassian MCP server to a local Kanban board, git branches, and reviewed pull requests. |
+Python Hermes plugin for Jira-backed Kanban work, repository resolution, local Git workflows, and reviewed GitHub or Bitbucket pull-request planning.
 
----
+Demonstrates provider-neutral Atlassian MCP tool discovery, deterministic Jira-status mapping, blocker handling, explainable repository selection, branch naming, and explicit review gates before pull-request planning. The official Atlassian MCP server and credentials are configured externally.
 
-## Stack
+## Public Engineering Evidence
 
-**AI/LLM** RAG · semantic chunking · embeddings · context re-ranking · Azure OpenAI · Claude · Gemini · vLLM · AutoGen · MCP · guardrails and groundedness evaluation
+- Automated unit, integration, and evaluation tests in `enterprise-rag-platform`, with CI validation of build output, tests, and published evaluation results.
+- Ruff, Mypy, Pytest, Docker Compose validation, and Docker image-build checks in `market-intelligence-platform` CI.
+- Automated workflow tests in `atlassian-hermes-connector` covering MCP discovery, Jira status mapping, repository resolution, branch creation, and PR guardrails.
 
-**Backend** Python · FastAPI · C# / .NET · ASP.NET Core · TypeScript · React · REST · microservices
+## Technical Focus
 
-**Data** PostgreSQL · SQL Server · Cosmos DB · Elasticsearch · Apache Druid · Redis · MongoDB · Azure Service Bus
+**AI systems:** RAG architecture · retrieval evaluation · LLM orchestration · MCP/tool integration · guardrails
 
-**Cloud** Azure · AKS · Azure Functions · Docker · Kubernetes · CI/CD · New Relic · Grafana · Splunk
+**Backend:** Python · FastAPI · C# · .NET · ASP.NET Core · REST APIs · distributed systems · TypeScript · React
 
----
+**Data and delivery:** PostgreSQL · Redis · Elasticsearch · Apache Druid · Azure · Docker · CI/CD · observability
 
-## Get in touch
-
-[LinkedIn](https://linkedin.com/in/sdkoneru) · [sdkoneru.com](https://sdkoneru.com) · sivadattak7@gmail.com
-
-Available for contract work through the Toptal network or directly.
+[LinkedIn](https://linkedin.com/in/sdkoneru) · [Portfolio](https://sdkoneru.com) · [Email](mailto:sivadattak7@gmail.com)
