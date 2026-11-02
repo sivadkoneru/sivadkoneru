@@ -2,51 +2,118 @@
 
 **Independent AI & Software Consultant | Enterprise RAG, AI Agents & Backend Engineering**
 
-Hyderabad, India · Remote collaboration across US and APAC time zones
+Hyderabad, India · Collaborating remotely across US and APAC time zones
 
-I design and build RAG/LLM systems, agent workflows, and reliable backend services. I have 9+ years of software engineering experience across enterprise AI and distributed analytics. I consult through SoftwareDevKollective and currently work as a freelance Senior Agentic AI Engineer. Client names and engagement details are shared only when permitted.
+I design, build, and deploy production AI systems and scalable backend applications.
 
-## What I work on
+With **9+ years of software engineering experience**, I've worked on enterprise RAG platforms, agentic AI workflows, distributed analytics, and cloud-native applications.
 
-- **Enterprise RAG:** document ingestion, retrieval, grounded answers with citations, evaluation, guardrails, observability, and access controls.
-- **AI agents and workflow integration:** MCP-based tooling, multi-step orchestration, and reviewable engineering workflows.
-- **Backend and cloud:** Python/FastAPI, C#/.NET, Azure, APIs, microservices, and distributed data systems.
+I provide AI engineering and software consulting services through **[SoftwareDevKollective](https://sdkollective.com)**, helping organizations move from AI prototypes to reliable, maintainable production systems.
 
-## Selected professional experience
+**[Portfolio](https://sdkoneru.com)** · **[Consulting Services](https://sdkollective.com)** · **[LinkedIn](https://linkedin.com/in/sdkoneru)** · **[Email](mailto:siva@sdkollective.com)** · **[Book a Call](https://cal.com/sdkoneru/30min)**
 
-- **Upland Software / Panviva:** Architected a production enterprise RAG platform serving 11,000+ users. Worked on retrieval and answer evaluation, tenant isolation, access controls, and operational guardrails. Caching and related optimizations reduced AI infrastructure cost by 35% and average AI response time by 20%.
-- **Bloomberg LP:** Built fixed-income analytics in systems processing 100M+ market and trade records daily, using Python, Apache Druid, and Elasticsearch. Earlier, worked on C#/.NET modernization for internal sales systems.
+---
 
-*The figures above describe prior professional work as reported in my public portfolio and résumé. The repositories below are independent reference implementations; they are not client code or claims that these exact projects produced the outcomes above.*
+## What I specialize in
 
-## Public projects
+**Enterprise RAG & LLM Systems**
+- Document ingestion, chunking, embeddings, retrieval, and re-ranking
+- Grounded responses with citations and automated evaluations
+- LLM guardrails, observability, caching, and cost optimization
+- Secure, multi-tenant AI applications
+
+**AI Agents & Workflow Automation**
+- Agent orchestration and tool integration
+- Model Context Protocol (MCP) integrations
+- AI-assisted engineering and business workflows
+- Human-in-the-loop approvals and reliable execution
+
+**Backend & Cloud Engineering**
+- Python, FastAPI, C#, .NET, TypeScript, and React
+- Microservices, distributed systems, and API development
+- Azure, Docker, Kubernetes, and CI/CD
+- Elasticsearch, PostgreSQL, Cosmos DB, and Apache Druid
+
+## Selected production experience
+
+### Enterprise RAG — Upland Software / Panviva
+
+Architected an enterprise RAG platform supporting **11,000+ users**, with retrieval pipelines, LLM orchestration, evaluation, and operational safeguards.
+
+- **35% reduction** in AI infrastructure costs through caching and related optimizations
+- **20% reduction** in average AI response time
+- Implemented grounded-answer evaluation, guardrails, and enterprise access controls
+
+### Distributed Analytics — Bloomberg LP
+
+Engineered fixed-income analytics systems processing **100M+ market and trade records daily**.
+
+- Contributed to **60% lower analytics latency** using Apache Druid
+- Built and modernized backend systems using Python, C#/.NET, and distributed data technologies
+
+## Featured engineering projects
 
 ### [Enterprise RAG Platform](https://github.com/sivadkoneru/enterprise-rag-platform)
 
-An independent .NET 10 reference implementation for document ingestion, retrieval, and grounded question answering with citations. It includes a local, key-free deterministic demo; optional S3 and Azure Blob document sources; configurable storage and retrieval adapters; API and CLI interfaces; and automated tests. A reproducible 50-question evaluation compares chunking strategies on a sample corpus. Its retrieval metrics are **local benchmark results**, not production-client outcomes or live-model answer-accuracy claims.
+**C# · .NET 10 · Elasticsearch · Azure · RAG**
+
+An independent reference implementation demonstrating enterprise RAG architecture, document ingestion, grounded question answering, and configurable retrieval and LLM providers.
+
+- Modular ingestion, storage, retrieval, and model interfaces
+- Local deterministic demo and API/CLI interfaces
+- S3 and Azure Blob integrations
+- Reproducible 50-question retrieval evaluation comparing chunking strategies
+- Automated tests and CI regression checks
 
 ### [Atlassian Hermes Connector](https://github.com/sivadkoneru/atlassian-hermes-connector)
 
-An independent Python plugin connecting Jira via Atlassian MCP to local Kanban state, repository selection, git branches, and reviewed pull-request planning. The repository shows tool discovery, status mapping, blocker handling, and explicit review gates. The official Atlassian MCP connection and credentials are configured separately.
+**Python · MCP · Jira · Git · Agentic Workflows**
+
+A Python plugin connecting Jira workflows through Atlassian MCP with local task management and repository operations.
+
+- MCP tool discovery and Jira status mapping
+- Repository selection and Git branch workflows
+- Explicit review gates for pull-request planning
+- Automated tests for workflow and integration behavior
 
 ### [Market Intelligence Platform](https://github.com/sivadkoneru/market-intelligence-platform)
 
-An educational Python reference platform for market/news ingestion, Azure Service Bus streaming, technical indicators, RAG-driven explanations, alerts, and FastAPI REST/WebSocket endpoints. It can be exercised with offline mock data. **Not for live trading, financial advice, or investment decisions.**
+**Python · FastAPI · Azure Service Bus · Apache Druid · RAG**
 
-## Engineering approach
+An educational multi-service reference platform demonstrating event-driven ingestion, data processing, AI-generated explanations, and real-time APIs.
 
-I favor measurable evaluation over demos alone, explicit boundaries between providers, automated tests, observability, and human review for consequential agent actions. For an existing system, I start by understanding the workflow and failure modes before proposing architecture or implementation changes.
+- Streaming pipelines and asynchronous services
+- Technical indicators and retrieval-based explanations
+- REST and WebSocket interfaces
+- Offline mock data, testing, and containerized development
 
-## Credential
+*Educational reference implementation; not intended for live trading or investment decisions.*
 
-[Claude Certified Architect — Foundations](https://www.credly.com/badges/bdbb416b-b930-4eee-9ec8-181e18e0d1ea/public_url) · Anthropic · August 2026
+## Engineering principles
 
-## Technical Focus
+I prioritize production reliability over proof-of-concept demos.
 
-**AI systems:** RAG architecture · retrieval evaluation · LLM orchestration · MCP/tool integration · guardrails
+- **Evaluate:** Test retrieval, groundedness, and workflow correctness
+- **Design for change:** Use modular architectures and clear provider boundaries
+- **Operate reliably:** Build observability, automated testing, and deployment controls
+- **Secure by design:** Consider access control, data boundaries, and guardrails
+- **Keep humans in control:** Use explicit approvals for consequential agent actions
 
-**Backend:** Python · FastAPI · C# · .NET · ASP.NET Core · REST APIs · distributed systems · TypeScript · React
+## Certification
 
-**Data and delivery:** PostgreSQL · Redis · Elasticsearch · Apache Druid · Azure · Docker · CI/CD · observability
+**[Claude Certified Architect — Foundations](https://www.credly.com/badges/bdbb416b-b930-4eee-9ec8-181e18e0d1ea/public_url)** — Anthropic, August 2026
 
-[LinkedIn](https://linkedin.com/in/sdkoneru) · [Portfolio](https://sdkoneru.com) · [Email](mailto:siva@sdkollective.com)
+## Work with me
+
+I help organizations architect, implement, and improve enterprise AI and backend systems, from technical discovery and proof of concept through deployment and production optimization.
+
+Have an AI engineering challenge or a project in mind? Let's discuss how I can help.
+
+- **Schedule a consultation:** [Book a 30-minute call](https://cal.com/sdkoneru/30min)
+- **Email:** [siva@sdkollective.com](mailto:siva@sdkollective.com)
+- **Consulting services:** [SoftwareDevKollective](https://sdkollective.com)
+- **Portfolio:** [sdkoneru.com](https://sdkoneru.com)
+
+---
+
+*Professional accomplishments above relate to prior employment. Public repositories are independently developed reference implementations, not client source code. Confidential client and engagement information is excluded.*
